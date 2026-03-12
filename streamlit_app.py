@@ -31,7 +31,9 @@ st.set_page_config(
 # ─────────────────────────────────────────────────────────────────────────────
 # CONFIGURATION
 # ─────────────────────────────────────────────────────────────────────────────
-DEFAULT_API = os.environ.get("API_URL", "http://127.0.0.1:5000")
+une_api = 'https://pushdev.pythonanywhere.com/'
+ressource = 'metrics'
+DEFAULT_API = os.environ.get("API_URL", une_api + ressource)
 REFRESH_SEC = int(os.environ.get("REFRESH_SEC", "5"))
 DEFAULT_N   = int(os.environ.get("DEFAULT_N",   "120"))   # ~10 min at 5s
 
